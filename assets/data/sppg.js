@@ -1,4 +1,4 @@
-var addressPoints = [
+var sppgPoints = [
     [-2.627274, 140.77795, 'SPPG Kota Jayapura Muara Tami Hotlekamp', 'SPPG Mitra', 'Rinal Alfian Purba', '82213460191', 'JL. Baru Pantai Holtekamp Jembatan 2 Muara Tami, Kel. Holtekamp, Kec. Muara Tami, Kota Jayapura, Papua 99351'],
     [-2.898255, 140.76915, 'SPPG Kep. Yapen Yapen Selatan Barawaikap', 'SPPG Mitra', 'Grace P. Lensru', '82238078406', 'Jl.Pertamina Kel. Barawaikap Kec. Yapen Selatan,Kab. Kepulauan Yapen, Prov. Papua, 98211'],
     [-2.53709212265129, 140.708945751921, 'SPPG Kota Jayapura Jayapura Utara Bayangkara', 'SPPG Mitra', 'Prizkalaila Gheovi Kireyisha', '85210228900', 'Jalan Pasifik Permai Ruko Dok II, Blok B Nomor 5 dan 6, Kota Jayapura, Prov. Papua'],
