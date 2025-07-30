@@ -16,6 +16,15 @@ for (var i = 0; i < sppgPoints.length; i++) {
     sppg.addLayer(marker);
 }
 
+var uptpkh = L.markerClusterGroup();
+for (var i = 0; i < uptpkhPoints.length; i++) {
+    var a = uptpkhPoints[i];
+    var title = "<b>" + a[2] + "</b><br>Alamat: " + a[3];
+    var marker = L.marker(new L.LatLng(a[0], a[1]), { title: title });
+    marker.bindPopup(title);
+    uptpkh.addLayer(marker);
+}
+
 const osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
@@ -44,9 +53,9 @@ var control = L.control.geonames({
 map.addControl(control);
 
 const overlays = {
-    'UPH': uph,
+    'UPH PKH': uph,
     'SPPG': sppg,
-    'Data Layer Tahun 2025': layer25
+    'UPT Lingkup Ditjen PKH': uptpkh
 };
 
 const layerControl = L.control.layers(baseLayers, overlays).addTo(map);
